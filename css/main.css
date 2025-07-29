@@ -20,12 +20,12 @@ body {
     background-color: black;
     margin: 0;
     color: white;
+    box-sizing: border-box;
 }
 
 .spotify-playlist {
     max-width: 100%;
     height: 100%;
-    box-sizing: border-box;
 }
 
 .spotify {
@@ -56,17 +56,16 @@ body {
 .spazio-ricerca {
     margin-bottom: 10px;
     filter: opacity(0.5);
-    padding-left: 10%;
 }
 
-.spazio-ricerca0 {
+.spazio-ricerca-barrata {
     margin-bottom: 10px;
     filter: opacity(0.5);
-    padding-left: 10%;
-    border-left: solid 2px #a2ef2c;
+    padding-left: 9%;
+    border-left: solid 3px #a2ef2c;
 }
 
-.spazio-ricerca0:hover {
+.spazio-ricerca-barrata:hover {
     filter: opacity(1);
 }
 
@@ -88,23 +87,57 @@ body {
 
 /* PLAYLIST */
 
+.playlist {
+    padding-left: 10%;
+}
+
 .playlist h3 {
     margin-top: 20px;
     color: white;
     font-size: 14px;
-    padding-left: 10%;
 }
 
 .lista-scorrevole {
     width: 100%;
-    height: 280px;
-    background-color: crimson;
+    height: 312px;
     overflow-y: auto;
 }
 
 .playlist ul {
     list-style-type: none;
     padding: 0;
+}
+
+.sfondo-plus {
+    background-color: grey;
+    padding: 6px;
+    margin-right: 5px;
+}
+
+/* INSTALLAZIONE */
+
+.installazione {
+    padding: 10%;
+}
+
+.installazione a {
+    color: white;
+    text-decoration: none;
+}
+
+.installazione img {
+    width: 15px;
+}
+
+.sfondo-pic {
+    background-color: grey;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.installazione strong {
+    vertical-align: middle;
+    margin-left: 3px;
 }
 
 /* LATO DESTRO MAIN */
@@ -140,6 +173,37 @@ button:hover {
     margin-top: 15px;
     margin-right: 4px;
 }
+
+/* CANZONI */
+
+/* TOP */
+
+.top {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.top ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.top li {
+    filter: opacity(0.5);
+    color: white;
+}
+
+.top li:hover {
+    filter: opacity(1);
+}
+
+.linea-verde {
+    border-bottom: 2px solid #a2ef2c;
+    
+}
+
 
 /* SOTTO */
 
@@ -203,9 +267,13 @@ button:hover {
         filter: opacity(1);
     }
 
-    .spazio-ricerca0 {
+    .spazio-ricerca-barrata {
         border: none;
         padding-left: 0;
     }
 
+    .installazione img {
+        width: 90%;
+    }
+    
  }
