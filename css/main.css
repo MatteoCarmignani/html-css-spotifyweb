@@ -1,0 +1,46 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN */
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 100px)
+}
+
+.container-sinistro {
+    height: 100%;
+    width: 15%;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.container-destro {
+    width: 85%;
+    height: 100%;
+    background-color: coral;
+}
+
+.container-sopra {
+    background-color: rgba(0,0,0,0.5);
+    height: 10%;
+    width: 100%;
+}
+
+.container-sotto {
+    overflow-y: auto;
+    width: 100%;
+    height: 90%;
+}
+
+
+/* FOOTER */
+
+.footer-container {
+    height: 100px;
+    /*debgub*/
+    background-color: grey;
+}
