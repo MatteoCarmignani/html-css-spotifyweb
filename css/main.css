@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -14,21 +14,34 @@
 .container-sinistro {
     height: 100%;
     width: 15%;
-    background-color: blueviolet;
+    background-color: black;
     margin: 0;
 }
 
 .container-destro {
     width: 85%;
     height: 100%;
-    background-color: coral;
+    background-color: #141922;
 }
 
 .container-sopra {
     background-color: rgba(0,0,0,0.5);
     height: 10%;
     width: 100%;
+    display: flex;
+    justify-content: end;
 }
+
+.container-sopra button {
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 30px;
+    padding: 0 30px;
+}
+
+
 
 .container-sotto {
     overflow-y: auto;
@@ -42,5 +55,5 @@
 .footer-container {
     height: 100px;
     /*debgub*/
-    background-color: grey;
+    background-color: #282828;
 }
