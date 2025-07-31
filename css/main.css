@@ -156,9 +156,7 @@ body {
 
 .container-destro {
     width: calc(100vw - 200px);
-    height: 100%;
     background-color: #141922;
-    overflow: hidden;
     overflow-y: auto;
 }
 
@@ -342,7 +340,7 @@ button:hover {
     margin-right: 5px;
 }
 
-.like-save div:hover {
+.cuore:hover {
     filter: opacity(1);
 }
 
@@ -381,12 +379,17 @@ button:hover {
     margin: 0;
 }
 
+.barra-musica {
+    width: 350px;
+    display: flex;
+}
+
 .minuto {
     display: flex;
     justify-content: center;
 }
 
-.minuto:hover .cerchio {
+.barra-musica:hover .cerchio {
     display: block;
 }
 
@@ -413,6 +416,11 @@ button:hover {
     color: white;
 }
 
+.barra-volume {
+    display: flex;
+    width: 70px;;
+}
+
 .barra-completa-vol {
     width: 20px;
     margin-left: 20px;
@@ -423,7 +431,7 @@ button:hover {
     filter: opacity(0.3);
 }
 
-.volume:hover .cerchio {
+.barra-volume:hover .cerchio {
     display: block;
 }
 
@@ -512,5 +520,9 @@ button:hover {
         margin-left: 6px;
         margin-right: 6px;
     }
+
+    .brano-scelto img {
+    width: 40px;
+}
 
   }
